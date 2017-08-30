@@ -28,6 +28,8 @@
 		0DF3E3FD1F534EB900041838 /* DebugAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF3E3FC1F534EB900041838 /* DebugAreaViewController.swift */; };
 		0DF3E3FF1F537FB000041838 /* checked_done_.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DF3E3FE1F537FB000041838 /* checked_done_.json */; };
 		0DF3E4011F53832700041838 /* notification_request.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DF3E4001F53832700041838 /* notification_request.json */; };
+		0DFC20691F575B500082980D /* StackElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC20681F575B500082980D /* StackElementViewController.swift */; };
+		0DFC206B1F575C530082980D /* LearningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC206A1F575C530082980D /* LearningViewController.swift */; };
 		38B49F909F57AA9F19132AEF /* Pods_ProChemistryV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682B5590C2177B2ECAC4DDAB /* Pods_ProChemistryV3.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		0DF3E3FC1F534EB900041838 /* DebugAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugAreaViewController.swift; sourceTree = "<group>"; };
 		0DF3E3FE1F537FB000041838 /* checked_done_.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checked_done_.json; sourceTree = "<group>"; };
 		0DF3E4001F53832700041838 /* notification_request.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notification_request.json; sourceTree = "<group>"; };
+		0DFC20681F575B500082980D /* StackElementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackElementViewController.swift; sourceTree = "<group>"; };
+		0DFC206A1F575C530082980D /* LearningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningViewController.swift; sourceTree = "<group>"; };
 		14DAE0777EDCA860E96224A3 /* Pods-ProChemistryV3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProChemistryV3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProChemistryV3/Pods-ProChemistryV3.debug.xcconfig"; sourceTree = "<group>"; };
 		406500DA5563E2820A786A79 /* Pods-ProChemistryV3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProChemistryV3.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProChemistryV3/Pods-ProChemistryV3.release.xcconfig"; sourceTree = "<group>"; };
 		682B5590C2177B2ECAC4DDAB /* Pods_ProChemistryV3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProChemistryV3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +92,8 @@
 		0DAE4C7A1F4F841600E5EE4F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0DFC20681F575B500082980D /* StackElementViewController.swift */,
+				0DFC206A1F575C530082980D /* LearningViewController.swift */,
 				0D1FDDE61F51940E009ADC64 /* MenuButton.swift */,
 				0D8E3AB51F50266D00F816DF /* AnimationViewController.swift */,
 				0DE240381F4E1DF700EA2C41 /* ViewController.swift */,
@@ -314,9 +320,11 @@
 			files = (
 				0D9E6B9D1F5302300094CC15 /* OnboardingViewController.swift in Sources */,
 				0D9E6B991F52FECF0094CC15 /* Onboarding.swift in Sources */,
+				0DFC20691F575B500082980D /* StackElementViewController.swift in Sources */,
 				0D8E3AB21F5018ED00F816DF /* MolCalculatorBrain.swift in Sources */,
 				0DF3E3FD1F534EB900041838 /* DebugAreaViewController.swift in Sources */,
 				0DE2404C1F4E204800EA2C41 /* SideMenuViewController.swift in Sources */,
+				0DFC206B1F575C530082980D /* LearningViewController.swift in Sources */,
 				0DAE4C7D1F4F843200E5EE4F /* Helpers.swift in Sources */,
 				0DE240391F4E1DF700EA2C41 /* ViewController.swift in Sources */,
 				0DE2403F1F4E1DF700EA2C41 /* ProChemistryV3.xcdatamodeld in Sources */,
