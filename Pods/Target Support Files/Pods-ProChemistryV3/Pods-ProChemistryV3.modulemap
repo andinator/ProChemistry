@@ -1,0 +1,6 @@
+framework module Pods_ProChemistryV3 {
+  umbrella header "Pods-ProChemistryV3-umbrella.h"
+
+  export *
+  module * { export * }
+}

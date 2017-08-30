@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/MolRechnerViewController.swift"
+            timestampString = "525345059.153649"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "MolRechnerViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.MolRechnerViewController.grammEingabe.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/MolRechnerViewController.swift"
+                  timestampString = "525345059.158479"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.MolRechnerViewController.grammEingabe.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/MolRechnerViewController.swift"
+                  timestampString = "525345059.160214"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.MolRechnerViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; ProChemistryV3.MolRechnerViewController"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/MolRechnerViewController.swift"
+                  timestampString = "525345059.162228"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.MolRechnerViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;ProChemistryV3.MolRechnerViewController&gt;"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/MolRechnerViewController.swift"
+                  timestampString = "525345059.164357"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/MolRechnerViewController.swift"
+            timestampString = "525346243.073895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "rechnePressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/MolRechnerViewController.swift"
+            timestampString = "525346243.073895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "rechnePressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/AnimationViewController.swift"
+            timestampString = "525346732.380911"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "animationPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/UIButtonX.swift"
+            timestampString = "525530672.693611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "UIButtonX"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.UIButtonX.animate.getter : Swift.Bool"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/UIButtonX.swift"
+                  timestampString = "525530592.282321"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.UIButtonX.animate.setter : Swift.Bool"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/UIButtonX.swift"
+                  timestampString = "525530592.284375"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.UIButtonX.init (frame : __C.CGRect) -&gt; ProChemistryV3.UIButtonX"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/UIButtonX.swift"
+                  timestampString = "525530592.285897"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.UIButtonX.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;ProChemistryV3.UIButtonX&gt;"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/UIButtonX.swift"
+                  timestampString = "525530592.287378"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/UIButtonX.swift"
+            timestampString = "525530672.693611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "UIButtonX"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.UIButtonX.animate.getter : Swift.Bool"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/UIButtonX.swift"
+                  timestampString = "525530592.295489"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.UIButtonX.animate.setter : Swift.Bool"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/UIButtonX.swift"
+                  timestampString = "525530592.296781"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.UIButtonX.init (frame : __C.CGRect) -&gt; ProChemistryV3.UIButtonX"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/UIButtonX.swift"
+                  timestampString = "525530592.297968"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProChemistryV3.UIButtonX.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;ProChemistryV3.UIButtonX&gt;"
+                  moduleName = "ProChemistryV3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andifelder/Desktop/PA/ProChemistryV3/ProChemistryV3/UIButtonX.swift"
+                  timestampString = "525530592.299156"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/OnboardingViewController.swift"
+            timestampString = "525568398.191108"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "onboardingDidTransitonToIndex(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/DebugAreaViewController.swift"
+            timestampString = "525557660.563755"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "testNotification(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProChemistryV3/SideMenuViewController.swift"
+            timestampString = "525800248.098978"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
