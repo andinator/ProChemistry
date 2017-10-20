@@ -39,12 +39,17 @@ class StackElementViewController: UIViewController {
     }
     
     func configureAnimation() {
-        animationView.addSubview(animationV!)
+//        animationV!.loopAnimation = true
+//        animationV!.play()
+//        animationView.addSubview(animationV!)
+        animationV!.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
+        self.view.addSubview(animationView)
         animationV!.loopAnimation = true
         animationV!.play()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        animationV?.play()
     }
 }

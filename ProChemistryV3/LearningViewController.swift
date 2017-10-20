@@ -14,7 +14,7 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
     
 
     
-    let data = ["Getting started with Swift", "SiriKit Basics", "SpriteKit for Apple Watch", "LUK", "HEHE"]
+    let data = ["Lerneinheit 1", "Lerneinheit 2", "Lerneinheit 3", "Lerneinheit 4", "Lerneinheit 5"]
     let data2 = ["Okey" , "Hmmm", "Why not!", "Test", "ez gg"]
     let data3 = [LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "checked_done_"),LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "like_animation")]
     
@@ -147,8 +147,6 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
         
         
     }
-    
-    
     func pin (view:UIView) {
         
         let viewHasReachedPinLocation = view.frame.origin.y < 100

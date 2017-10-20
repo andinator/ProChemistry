@@ -20,7 +20,8 @@ class SideMenuViewController: UITableViewController {
             case 0: NotificationCenter.default.post(name: NSNotification.Name("MolCalculator"), object: nil)
             case 1: NotificationCenter.default.post(name: NSNotification.Name("Animations"), object: nil)
             case 2: NotificationCenter.default.post(name: NSNotification.Name("DebugArea"), object: nil)
-            case 3: NotificationCenter.default.post(name: NSNotification.Name("showSettings"), object: nil)
+            case 3: NotificationCenter.default.post(name: NSNotification.Name("showLearningVC"), object: nil)
+            case 4: NotificationCenter.default.post(name: NSNotification.Name("showDebug"), object: nil)
             default: print("not found!")
         }
     }

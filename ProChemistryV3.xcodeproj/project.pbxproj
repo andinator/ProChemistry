@@ -45,6 +45,7 @@
 		0D9E6B9C1F5302300094CC15 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		0DAE4C7C1F4F843200E5EE4F /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		0DC8C30E1F5714350051B811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DD2E2431F99F62B00C026C2 /* pink_drink_machine.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pink_drink_machine.json; sourceTree = "<group>"; };
 		0DE240331F4E1DF700EA2C41 /* ProChemistryV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProChemistryV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE240361F4E1DF700EA2C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE240381F4E1DF700EA2C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 		0DAE4C7F1F4F847000E5EE4F /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				0DD2E2431F99F62B00C026C2 /* pink_drink_machine.json */,
 				0DF3E4001F53832700041838 /* notification_request.json */,
 				0DF3E3FE1F537FB000041838 /* checked_done_.json */,
 				0D8E3AB91F502E1E00F816DF /* test.json */,

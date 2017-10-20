@@ -24,6 +24,7 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
     //Animation
     let checkedAnimationView = LOTAnimationView(name: "checked_done_")
     let allowNotificationsView = LOTAnimationView(name: "notification_request")
+    let machineAnimation = LOTAnimationView(name: "pink_drink_machine")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,6 +81,13 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
     
     //Falls bei letzter Seite angekommen "Lets Go" Button einblenden
     func onboardingDidTransitonToIndex(_ index: Int) {
+        if index == 1 {
+            machineAnimation.alpha = 1
+            machineAnimation.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
+            machineAnimation.contentMode = .scaleAspectFit
+            self.view.addSubview(machineAnimation)
+            machineAnimation.play()
+        }
         if index == 2 {
             UIView.animate(withDuration: 0.3, animations: { 
                 self.letsGoButton.alpha = 1.0

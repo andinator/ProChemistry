@@ -22,6 +22,7 @@ class MainViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(showMolCalculator), name: NSNotification.Name("MolCalculator"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showAnimations), name: NSNotification.Name("Animations"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showDebugArea), name: NSNotification.Name("DebugArea"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showLearning), name: NSNotification.Name("showLearningVC"), object: nil)
         
     }
     
@@ -30,7 +31,6 @@ class MainViewController: UIViewController {
     //  MARK: Segues
     @objc func showMolCalculator() {
         performSegue(withIdentifier: "molCalculator", sender: nil)
-        
     }
     
     @objc func showAnimations() {
@@ -43,6 +43,13 @@ class MainViewController: UIViewController {
     
     @objc func showSettings() {
         performSegue(withIdentifier: "showMenu", sender: nil)
+    }
+    
+    @objc func showLearning() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let learningVC = sb.instantiateViewController(withIdentifier: "LearningVC") as! LearningViewController
+        self.present(learningVC, animated: true, completion: nil)
+
     }
    
 

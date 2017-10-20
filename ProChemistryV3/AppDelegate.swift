@@ -13,12 +13,11 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         var initialVC = storyBoard.instantiateViewController(withIdentifier: "onboarding")
         
         let userDefaults = UserDefaults.standard
@@ -29,7 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = initialVC
         window?.makeKeyAndVisible()
+
         return true
+    }
+    // Force Touch
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        let molVC = storyBoard.instantiateViewController(withIdentifier: "MolRechnerViewController")
+        self.window?.rootViewController?.present(molVC, animated: true, completion: nil)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -100,6 +105,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
-
