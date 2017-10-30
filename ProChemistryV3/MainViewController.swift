@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(showAnimations), name: NSNotification.Name("Animations"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showDebugArea), name: NSNotification.Name("DebugArea"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showLearning), name: NSNotification.Name("showLearningVC"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showElemente), name: NSNotification.Name("elementeVC"), object: nil)
         
     }
     
@@ -52,7 +53,10 @@ class MainViewController: UIViewController {
         self.present(learningVC, animated: true, completion: nil)
 
     }
-
+    @objc func showElemente() {
+        performSegue(withIdentifier: "elementSegue", sender: self)
+        
+    }
    
 
     @IBAction func showMenu(_ sender: Any) {

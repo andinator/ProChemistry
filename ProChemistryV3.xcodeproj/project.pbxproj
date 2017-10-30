@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D1FDDE51F51932A009ADC64 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FDDE41F51932A009ADC64 /* UIButtonX.swift */; };
 		0D1FDDE71F51940E009ADC64 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FDDE61F51940E009ADC64 /* MenuButton.swift */; };
+		0D666EDD1FA7C63D00B136C7 /* ElementeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D666EDC1FA7C63D00B136C7 /* ElementeTableViewController.swift */; };
+		0D666EDF1FA7C83700B136C7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D666EDE1FA7C83700B136C7 /* DetailViewController.swift */; };
 		0D8E3AB21F5018ED00F816DF /* MolCalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E3AB11F5018ED00F816DF /* MolCalculatorBrain.swift */; };
 		0D8E3AB41F50197500F816DF /* MolRechnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E3AB31F50197500F816DF /* MolRechnerViewController.swift */; };
 		0D8E3AB61F50266D00F816DF /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E3AB51F50266D00F816DF /* AnimationViewController.swift */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		0D1FDDE41F51932A009ADC64 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
 		0D1FDDE61F51940E009ADC64 /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		0D666EDC1FA7C63D00B136C7 /* ElementeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementeTableViewController.swift; sourceTree = "<group>"; };
+		0D666EDE1FA7C83700B136C7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0D8E3AB11F5018ED00F816DF /* MolCalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MolCalculatorBrain.swift; sourceTree = "<group>"; };
 		0D8E3AB31F50197500F816DF /* MolRechnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MolRechnerViewController.swift; sourceTree = "<group>"; };
 		0D8E3AB51F50266D00F816DF /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				0D9E6B981F52FECF0094CC15 /* Onboarding.swift */,
 				0D9E6B9C1F5302300094CC15 /* OnboardingViewController.swift */,
 				0DF3E3FC1F534EB900041838 /* DebugAreaViewController.swift */,
+				0D666EDC1FA7C63D00B136C7 /* ElementeTableViewController.swift */,
+				0D666EDE1FA7C83700B136C7 /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -326,9 +332,11 @@
 				0DFC20691F575B500082980D /* StackElementViewController.swift in Sources */,
 				0D8E3AB21F5018ED00F816DF /* MolCalculatorBrain.swift in Sources */,
 				0DF3E3FD1F534EB900041838 /* DebugAreaViewController.swift in Sources */,
+				0D666EDD1FA7C63D00B136C7 /* ElementeTableViewController.swift in Sources */,
 				0DE2404C1F4E204800EA2C41 /* SideMenuViewController.swift in Sources */,
 				0DFC206B1F575C530082980D /* LearningViewController.swift in Sources */,
 				0DAE4C7D1F4F843200E5EE4F /* Helpers.swift in Sources */,
+				0D666EDF1FA7C83700B136C7 /* DetailViewController.swift in Sources */,
 				0DE240391F4E1DF700EA2C41 /* ViewController.swift in Sources */,
 				0DE2403F1F4E1DF700EA2C41 /* ProChemistryV3.xcdatamodeld in Sources */,
 				0DE240371F4E1DF700EA2C41 /* AppDelegate.swift in Sources */,

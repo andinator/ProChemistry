@@ -58,7 +58,7 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
                 ("", "Viel Spass!", "", "", onboardColor4, UIColor.white, UIColor.white, titleFont, descriptionFont)][index]
     }
     
-    func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {}
+   @objc func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {}
     
     //Falls wieder zurück gescrollt wird, Buttons ausblenden
     func onboardingWillTransitonToIndex(_ index: Int) {
@@ -83,15 +83,7 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
     
     //Falls bei letzter Seite angekommen "Lets Go" Button einblenden
     func onboardingDidTransitonToIndex(_ index: Int) {
-        if index == 1 {
-            
-            machineAnimation.alpha = 1
-            machineAnimation.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
-            machineAnimation.contentMode = .scaleAspectFit
-            self.view.addSubview(machineAnimation)
-            machineAnimation.play()
-            
-        }
+        if index == 1 {}
         if index == 2 {
             UIView.animate(withDuration: 0.3, animations: {
                 self.notificationButton.alpha = 1
@@ -102,12 +94,13 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
             allowNotificationsView.contentMode = .scaleToFill
             self.view.addSubview(allowNotificationsView)
             allowNotificationsView.play(toProgress: 0.95, withCompletion: nil)
-            
             let btn: UIButton = UIButton(frame: CGRect(x: 223, y: 321.333, width: 50, height: 40))
             btn.addTarget(self, action: #selector(notificationSetup(_:)), for: .touchUpInside)
             self.view.addSubview(btn)
 
         } else if index == 3 {
+            self.letsGoButton.alpha = 1
+            print("pls")
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.letsGoButton.alpha = 1.0

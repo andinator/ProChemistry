@@ -50,7 +50,7 @@ class StackElementViewController: UIViewController {
         animationV!.frame = CGRect(x: 0, y: 100, width: animationView.frame.size.width, height: 250)
         animationV!.contentMode = .scaleAspectFill
         self.view.addSubview(animationV!)
-        animationV!.play()
+        animationV!.play(toProgress: 0.99, withCompletion: nil)
     }
 
     override func viewDidLoad() {

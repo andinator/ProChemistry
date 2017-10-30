@@ -22,6 +22,7 @@ class SideMenuViewController: UITableViewController {
             case 2: NotificationCenter.default.post(name: NSNotification.Name("DebugArea"), object: nil)
             case 3: NotificationCenter.default.post(name: NSNotification.Name("showLearningVC"), object: nil)
             case 4: NotificationCenter.default.post(name: NSNotification.Name("settingsVC"), object: nil)
+            case 5: NotificationCenter.default.post(name: NSNotification.Name("elementeVC"), object: nil)
             default: print("not found!")
         }
     }
