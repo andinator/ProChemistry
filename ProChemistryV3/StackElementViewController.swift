@@ -12,10 +12,17 @@ import Lottie
 class StackElementViewController: UIViewController {
 
     @IBOutlet weak var headerLabel: UILabel!
+    @IBOutlet weak var untertitelLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var animationView: UIView!
     
     var headerString:String? {
+        didSet {
+            configureText()
+        }
+    }
+    
+    var untertitelString:String? {
         didSet {
             configureText()
         }
@@ -35,21 +42,18 @@ class StackElementViewController: UIViewController {
     
     func configureText() {
         headerLabel.text = headerString
+        untertitelLabel.text = untertitelString
         textView.text = mainText
     }
     
     func configureAnimation() {
-//        animationV!.loopAnimation = true
-//        animationV!.play()
-//        animationView.addSubview(animationV!)
-        animationV!.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
-        self.view.addSubview(animationView)
-        animationV!.loopAnimation = true
+        animationV!.frame = CGRect(x: 0, y: 100, width: animationView.frame.size.width, height: 250)
+        animationV!.contentMode = .scaleAspectFill
+        self.view.addSubview(animationV!)
         animationV!.play()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        animationV?.play()
     }
 }

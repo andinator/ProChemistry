@@ -15,8 +15,9 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
 
     
     let data = ["Lerneinheit 1", "Lerneinheit 2", "Lerneinheit 3", "Lerneinheit 4", "Lerneinheit 5"]
-    let data2 = ["Okey" , "Hmmm", "Why not!", "Test", "ez gg"]
-    let data3 = [LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "checked_done_"),LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "like_animation")]
+    let data2 = ["Untertitel 1","Untertitel 2","Untertitel","Untertitel","","Untertitel"]
+    let data3 = ["Das chemische Gleichgewicht" , "Hmmm", "Why not!", "Test", "ez gg"]
+    let data4 = [LOTAnimationView(name: "notification_request"),LOTAnimationView(name: "checked_done_"),LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "like_animation")]
     
     var views = [UIView]()
     var animator:UIDynamicAnimator!
@@ -40,14 +41,14 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
         var offset:CGFloat = 250
         
         for i in 0 ... data.count - 1 {
-            if let view = addViewController(atOffset: offset, textForHeader: data[i] as AnyObject, textForTextView: data2[i] as AnyObject, animationName: data3[i]) {
+            if let view = addViewController(atOffset: offset, textForHeader: data[i] as AnyObject, textForUntertitel: data2[i] as AnyObject, textForTextView: data3[i] as AnyObject, animationName: data4[i] as AnyObject) {
                 views.append(view)
                 offset -= 50
             }
         }
     }
     
-    func addViewController (atOffset offset:CGFloat, textForHeader data: AnyObject?, textForTextView text: AnyObject?, animationName animationN: LOTAnimationView) -> UIView? {
+    func addViewController (atOffset offset:CGFloat, textForHeader data: AnyObject?, textForUntertitel data2:AnyObject?, textForTextView text: AnyObject?, animationName animationN: AnyObject?) -> UIView? {
         
         let frameForView = self.view.bounds.offsetBy(dx: 0, dy: self.view.bounds.size.height - offset)
         
@@ -66,11 +67,18 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
             if let headerStr = data as? String {
                 stackElementVC.headerString = headerStr
             }
+            if let untertitelStr = data2 as? String{
+                stackElementVC.untertitelString = untertitelStr
+            }
+            
             if let textForView = text as? String{
                 stackElementVC.mainText = textForView
             }
             
-            stackElementVC.animationV = animationN
+            if let animationForView = animationN as? LOTAnimationView {
+                stackElementVC.animationV = animationForView
+            }
+            
             
             
             self.addChildViewController(stackElementVC)
@@ -117,7 +125,7 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
         
     }
   
-    func handlePan (gestureRecognizer:UIPanGestureRecognizer) {
+    @objc func handlePan (gestureRecognizer:UIPanGestureRecognizer) {
         
         let touchPoint = gestureRecognizer.location(in: self.view)
         let draggedView = gestureRecognizer.view!
@@ -162,7 +170,6 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
                 setVisibility(view: view, alpha: 0)
                 
                 viewPinned = true
-                
             }
         }else {
             if viewPinned {

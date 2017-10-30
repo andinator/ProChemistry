@@ -43,10 +43,10 @@ class MolCalculatorBrain
         let regex = try! NSRegularExpression(pattern: pattern, options: [])
         let matches = regex.matches(in: string, options: [], range: NSRange(location: 0, length: string.characters.count))
         for match in matches {
-            let elementRange = match.rangeAt(1)
+            let elementRange = match.range(at: 1)
             let element = (string as NSString).substring(with: elementRange)
             elementearray.append(element)
-            let quantityRange = match.rangeAt(3)
+            let quantityRange = match.range(at: 3)
             var quantity = "1"
             if quantityRange.location != NSNotFound {
                 quantity = (string as NSString).substring(with: quantityRange)

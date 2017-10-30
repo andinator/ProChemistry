@@ -45,22 +45,24 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
         //Farben
         let onboardColor1 = UIColor(red: 207/255, green: 103/255, blue: 118/255, alpha: 1.0)
         let onboardColor2 = UIColor(red: 48/255, green: 65/255, blue: 93/255, alpha: 1.0)
-        let onboardColor3 = UIColor(red: 142/255, green: 171/255, blue: 222/255, alpha: 1.0)
-        let onboardColor4 = UIColor(red: 175/255, green: 193/255, blue: 250/255, alpha: 1.0)
+        let onboardColor3 = UIColor(red: 175/255, green: 193/255, blue: 250/255, alpha: 1.0)
+        let onboardColor4 = UIColor(red: 142/255, green: 171/255, blue: 222/255, alpha: 1.0)
+        
         //Fonts
         let titleFont = UIFont(name: "AvenirNext-Bold", size: 23.0)!
         let descriptionFont = UIFont(name: "AvenirNext-Medium", size: 18.0)!
         //Return im erforderten Format
         return [("", "Willkommen bei Pro Chemistry!", "Diese App ist als Projektarbeit am Gymnasium Oberwil entstanden.", "", onboardColor1, UIColor.white, UIColor.white, titleFont, descriptionFont),
-                ("", "Lerne Mol rechnen wie noch nie!", "Egal ob anfänger oder fortgeschritten, lerne und übe mit einer revolutionären Methode.", "", onboardColor2, UIColor.white, UIColor.white, titleFont, descriptionFont),
-                ("", "Mol Rechner", "Toller Rechner!", "", onboardColor3, UIColor.white, UIColor.white, titleFont, descriptionFont),
-                ("", "", "", "", onboardColor4, UIColor.white, UIColor.white, titleFont, descriptionFont)][index]
+                ("", "Chemie war noch nie so einfach!", "Mithilfe von ProChemistry hast du wichtiges Wissen unter deinen Fingerspitzen!", "", onboardColor2, UIColor.white, UIColor.white, titleFont, descriptionFont),
+                ("", "", "", "", onboardColor3, UIColor.white, UIColor.white, titleFont, descriptionFont),
+                ("", "Viel Spass!", "", "", onboardColor4, UIColor.white, UIColor.white, titleFont, descriptionFont)][index]
     }
     
     func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {}
+    
     //Falls wieder zurück gescrollt wird, Buttons ausblenden
     func onboardingWillTransitonToIndex(_ index: Int) {
-        if index == 1 || index == 3 {
+        if index == 2  {
             if self.letsGoButton.alpha == 1 {
                 UIView.animate(withDuration: 0.2, animations: {
                     self.letsGoButton.alpha = 0
@@ -68,7 +70,7 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
                     
                 })
             }
-        } else if index == 2 {
+        } else if index == 1 || index == 3 {
             if self.notificationButton.alpha == 1 {
                 UIView.animate(withDuration: 0.2, animations: { 
                     self.notificationButton.alpha = 0
@@ -82,26 +84,19 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
     //Falls bei letzter Seite angekommen "Lets Go" Button einblenden
     func onboardingDidTransitonToIndex(_ index: Int) {
         if index == 1 {
+            
             machineAnimation.alpha = 1
             machineAnimation.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
             machineAnimation.contentMode = .scaleAspectFit
             self.view.addSubview(machineAnimation)
             machineAnimation.play()
+            
         }
         if index == 2 {
-            UIView.animate(withDuration: 0.3, animations: { 
-                self.letsGoButton.alpha = 1.0
-            })
-//          Animation hinzufügen und sichtbar machen
-            checkedAnimationView.alpha = 1
-            checkedAnimationView.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
-            checkedAnimationView.contentMode = .scaleAspectFill
-            self.view.addSubview(checkedAnimationView)
-            checkedAnimationView.play()
-        } else if index == 3 {
-            UIView.animate(withDuration: 0.3, animations: { 
+            UIView.animate(withDuration: 0.3, animations: {
                 self.notificationButton.alpha = 1
             })
+            
             allowNotificationsView.alpha = 1
             allowNotificationsView.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 400)
             allowNotificationsView.contentMode = .scaleToFill
@@ -111,6 +106,18 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
             let btn: UIButton = UIButton(frame: CGRect(x: 223, y: 321.333, width: 50, height: 40))
             btn.addTarget(self, action: #selector(notificationSetup(_:)), for: .touchUpInside)
             self.view.addSubview(btn)
+
+        } else if index == 3 {
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.letsGoButton.alpha = 1.0
+            })
+
+            checkedAnimationView.alpha = 1
+            checkedAnimationView.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
+            checkedAnimationView.contentMode = .scaleAspectFill
+            self.view.addSubview(checkedAnimationView)
+            checkedAnimationView.play()
         }
     }
     
@@ -126,13 +133,4 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
             print("notfication setup done")
         }
     }
-    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        if let touch = touches.first {
-//            let position = touch.location(in: view)
-//            print(position)
-//            (224.666656494141, 389.0) no
-//        }
-//    }
-
 }

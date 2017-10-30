@@ -18,7 +18,7 @@ class MainViewController: UIViewController {
         
         button.adjustsImageWhenHighlighted = false;
         
-        NotificationCenter.default.addObserver(self, selector: #selector(showSettings), name: NSNotification.Name("showSettings"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showSettings), name: NSNotification.Name("settingsVC"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showMolCalculator), name: NSNotification.Name("MolCalculator"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showAnimations), name: NSNotification.Name("Animations"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showDebugArea), name: NSNotification.Name("DebugArea"), object: nil)
@@ -42,6 +42,7 @@ class MainViewController: UIViewController {
     }
     
     @objc func showSettings() {
+        print("test")
         performSegue(withIdentifier: "showMenu", sender: nil)
     }
     
@@ -51,6 +52,7 @@ class MainViewController: UIViewController {
         self.present(learningVC, animated: true, completion: nil)
 
     }
+
    
 
     @IBAction func showMenu(_ sender: Any) {

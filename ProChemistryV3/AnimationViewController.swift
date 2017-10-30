@@ -17,7 +17,7 @@ class AnimationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func animationPressed(_ sender: Any) {
-        let animationView = LOTAnimationView(name: "like_animation")
+        let animationView = LOTAnimationView(name: "checked_done_")
         animationView.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
         animationView.contentMode = .scaleAspectFill
         animationView.loopAnimation = true
