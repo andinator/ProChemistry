@@ -16,6 +16,11 @@
 		0D8E3AB61F50266D00F816DF /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8E3AB51F50266D00F816DF /* AnimationViewController.swift */; };
 		0D8E3AB81F50271400F816DF /* like_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D8E3AB71F50271400F816DF /* like_animation.json */; };
 		0D8E3ABA1F502E1E00F816DF /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D8E3AB91F502E1E00F816DF /* test.json */; };
+		0D9C38631FA866BF0034F76C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C38621FA866BF0034F76C /* Constants.swift */; };
+		0D9C38651FA8B1930034F76C /* toggle_switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C38641FA8B1930034F76C /* toggle_switch.json */; };
+		0D9C38671FA8B6AD0034F76C /* EinstellungenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C38661FA8B6AD0034F76C /* EinstellungenViewController.swift */; };
+		0D9C38691FA8B9D40034F76C /* buttonOn.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C38681FA8B9D40034F76C /* buttonOn.json */; };
+		0D9C386B1FA8BA140034F76C /* buttonOff.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C386A1FA8BA140034F76C /* buttonOff.json */; };
 		0D9E6B991F52FECF0094CC15 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E6B981F52FECF0094CC15 /* Onboarding.swift */; };
 		0D9E6B9D1F5302300094CC15 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E6B9C1F5302300094CC15 /* OnboardingViewController.swift */; };
 		0DAE4C7D1F4F843200E5EE4F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE4C7C1F4F843200E5EE4F /* Helpers.swift */; };
@@ -45,6 +50,11 @@
 		0D8E3AB51F50266D00F816DF /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		0D8E3AB71F50271400F816DF /* like_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like_animation.json; sourceTree = "<group>"; };
 		0D8E3AB91F502E1E00F816DF /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		0D9C38621FA866BF0034F76C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D9C38641FA8B1930034F76C /* toggle_switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = toggle_switch.json; sourceTree = "<group>"; };
+		0D9C38661FA8B6AD0034F76C /* EinstellungenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EinstellungenViewController.swift; sourceTree = "<group>"; };
+		0D9C38681FA8B9D40034F76C /* buttonOn.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = buttonOn.json; sourceTree = "<group>"; };
+		0D9C386A1FA8BA140034F76C /* buttonOff.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = buttonOff.json; sourceTree = "<group>"; };
 		0D9E6B981F52FECF0094CC15 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		0D9E6B9C1F5302300094CC15 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		0DAE4C7C1F4F843200E5EE4F /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -110,6 +120,7 @@
 				0DF3E3FC1F534EB900041838 /* DebugAreaViewController.swift */,
 				0D666EDC1FA7C63D00B136C7 /* ElementeTableViewController.swift */,
 				0D666EDE1FA7C83700B136C7 /* DetailViewController.swift */,
+				0D9C38661FA8B6AD0034F76C /* EinstellungenViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -119,6 +130,7 @@
 			children = (
 				0D1FDDE41F51932A009ADC64 /* UIButtonX.swift */,
 				0DAE4C7C1F4F843200E5EE4F /* Helpers.swift */,
+				0D9C38621FA866BF0034F76C /* Constants.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -134,11 +146,14 @@
 		0DAE4C7F1F4F847000E5EE4F /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				0D9C38641FA8B1930034F76C /* toggle_switch.json */,
 				0D8E3AB71F50271400F816DF /* like_animation.json */,
 				0D8E3AB91F502E1E00F816DF /* test.json */,
 				0DF3E3FE1F537FB000041838 /* checked_done_.json */,
 				0DF3E4001F53832700041838 /* notification_request.json */,
 				0DD2E2431F99F62B00C026C2 /* pink_drink_machine.json */,
+				0D9C38681FA8B9D40034F76C /* buttonOn.json */,
+				0D9C386A1FA8BA140034F76C /* buttonOff.json */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -255,10 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DE240441F4E1DF700EA2C41 /* LaunchScreen.storyboard in Resources */,
+				0D9C38691FA8B9D40034F76C /* buttonOn.json in Resources */,
 				0D8E3ABA1F502E1E00F816DF /* test.json in Resources */,
 				0DE2403C1F4E1DF700EA2C41 /* Main.storyboard in Resources */,
 				0D8E3AB81F50271400F816DF /* like_animation.json in Resources */,
+				0D9C386B1FA8BA140034F76C /* buttonOff.json in Resources */,
 				0DC8C30F1F5714350051B811 /* Assets.xcassets in Resources */,
+				0D9C38651FA8B1930034F76C /* toggle_switch.json in Resources */,
 				0DF3E4011F53832700041838 /* notification_request.json in Resources */,
 				0DF3E3FF1F537FB000041838 /* checked_done_.json in Resources */,
 			);
@@ -327,7 +345,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9C38671FA8B6AD0034F76C /* EinstellungenViewController.swift in Sources */,
 				0D9E6B9D1F5302300094CC15 /* OnboardingViewController.swift in Sources */,
+				0D9C38631FA866BF0034F76C /* Constants.swift in Sources */,
 				0D9E6B991F52FECF0094CC15 /* Onboarding.swift in Sources */,
 				0DFC20691F575B500082980D /* StackElementViewController.swift in Sources */,
 				0D8E3AB21F5018ED00F816DF /* MolCalculatorBrain.swift in Sources */,

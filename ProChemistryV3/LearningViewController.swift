@@ -10,15 +10,11 @@ import UIKit
 import Lottie
 
 class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
-    
-    
 
-    
-    let data = ["Lerneinheit 1", "Lerneinheit 2", "Lerneinheit 3", "Lerneinheit 4", "Lerneinheit 5"]
-    let data2 = ["Untertitel 1","Untertitel 2","Untertitel","Untertitel","","Untertitel"]
-    let data3 = ["Das chemische Gleichgewicht" , "Hmmm", "Why not!", "Test", "ez gg"]
-    let data4 = [LOTAnimationView(name: "notification_request"),LOTAnimationView(name: "checked_done_"),LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "like_animation"),LOTAnimationView(name: "like_animation")]
-    
+    let data = constants.learningData.titel
+    let data2 = constants.learningData.untertitel
+    let data3 = constants.learningData.text
+
     var views = [UIView]()
     var animator:UIDynamicAnimator!
     var gravity:UIGravityBehavior!
@@ -27,10 +23,8 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
     var viewDragging = false
     var viewPinned = false
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         animator = UIDynamicAnimator(referenceView: self.view)
         gravity = UIGravityBehavior()
@@ -41,14 +35,14 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
         var offset:CGFloat = 250
         
         for i in 0 ... data.count - 1 {
-            if let view = addViewController(atOffset: offset, textForHeader: data[i] as AnyObject, textForUntertitel: data2[i] as AnyObject, textForTextView: data3[i] as AnyObject, animationName: data4[i] as AnyObject) {
+            if let view = addViewController(atOffset: offset, textForHeader: data[i] as AnyObject, textForUntertitel: data2[i] as AnyObject, textForTextView: data3[i] as AnyObject) {
                 views.append(view)
                 offset -= 50
             }
         }
     }
     
-    func addViewController (atOffset offset:CGFloat, textForHeader data: AnyObject?, textForUntertitel data2:AnyObject?, textForTextView text: AnyObject?, animationName animationN: AnyObject?) -> UIView? {
+    func addViewController (atOffset offset:CGFloat, textForHeader data: AnyObject?, textForUntertitel data2:AnyObject?, textForTextView text: AnyObject?) -> UIView? {
         
         let frameForView = self.view.bounds.offsetBy(dx: 0, dy: self.view.bounds.size.height - offset)
         
@@ -74,11 +68,6 @@ class LearningViewController: UIViewController, UICollisionBehaviorDelegate {
             if let textForView = text as? String{
                 stackElementVC.mainText = textForView
             }
-            
-            if let animationForView = animationN as? LOTAnimationView {
-                stackElementVC.animationV = animationForView
-            }
-            
             
             
             self.addChildViewController(stackElementVC)

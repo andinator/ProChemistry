@@ -14,7 +14,11 @@ class AnimationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let test = LOTAnimatedSwitch(named: "toggle_switch")
+        test.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 100)
+        test.setOn(true, animated: true)
+        self.view.addSubview(test)
+        
     }
     @IBAction func animationPressed(_ sender: Any) {
         let animationView = LOTAnimationView(name: "checked_done_")

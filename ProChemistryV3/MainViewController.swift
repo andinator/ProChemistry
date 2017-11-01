@@ -26,9 +26,7 @@ class MainViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(showElemente), name: NSNotification.Name("elementeVC"), object: nil)
         
     }
-    
-    
-    
+
     //  MARK: Segues
     @objc func showMolCalculator() {
         performSegue(withIdentifier: "molCalculator", sender: nil)
@@ -43,7 +41,6 @@ class MainViewController: UIViewController {
     }
     
     @objc func showSettings() {
-        print("test")
         performSegue(withIdentifier: "showMenu", sender: nil)
     }
     
@@ -57,11 +54,8 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "elementSegue", sender: self)
         
     }
-   
-
     @IBAction func showMenu(_ sender: Any) {
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
     }
-
 
 }

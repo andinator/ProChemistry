@@ -21,11 +21,6 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
     let center = UNUserNotificationCenter.current()
     let options: UNAuthorizationOptions = [.alert, .sound, .badge]
     
-    //Animation
-    let checkedAnimationView = LOTAnimationView(name: "checked_done_")
-    let allowNotificationsView = LOTAnimationView(name: "notification_request")
-    let machineAnimation = LOTAnimationView(name: "pink_drink_machine")
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,20 +37,11 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
     }
     //Seiten definieren
     func onboardingItemAtIndex(_ index: Int) -> OnboardingItemInfo {
-        //Farben
-        let onboardColor1 = UIColor(red: 207/255, green: 103/255, blue: 118/255, alpha: 1.0)
-        let onboardColor2 = UIColor(red: 48/255, green: 65/255, blue: 93/255, alpha: 1.0)
-        let onboardColor3 = UIColor(red: 175/255, green: 193/255, blue: 250/255, alpha: 1.0)
-        let onboardColor4 = UIColor(red: 142/255, green: 171/255, blue: 222/255, alpha: 1.0)
-        
-        //Fonts
-        let titleFont = UIFont(name: "AvenirNext-Bold", size: 23.0)!
-        let descriptionFont = UIFont(name: "AvenirNext-Medium", size: 18.0)!
-        //Return im erforderten Format
-        return [("", "Willkommen bei Pro Chemistry!", "Diese App ist als Projektarbeit am Gymnasium Oberwil entstanden.", "", onboardColor1, UIColor.white, UIColor.white, titleFont, descriptionFont),
-                ("", "Chemie war noch nie so einfach!", "Mithilfe von ProChemistry hast du wichtiges Wissen unter deinen Fingerspitzen!", "", onboardColor2, UIColor.white, UIColor.white, titleFont, descriptionFont),
-                ("", "", "", "", onboardColor3, UIColor.white, UIColor.white, titleFont, descriptionFont),
-                ("", "Viel Spass!", "", "", onboardColor4, UIColor.white, UIColor.white, titleFont, descriptionFont)][index]
+    //Return im erforderten Format
+    return [("", "Willkommen bei Pro Chemistry!", "Diese App ist als Projektarbeit am Gymnasium Oberwil entstanden.", "", constants.onboarding.color1, UIColor.white, UIColor.white, constants.onboarding.titleFont, constants.onboarding.descriptionFont),
+            ("", "Chemie war noch nie so einfach!", "Mithilfe von ProChemistry hast du wichtiges Wissen unter deinen Fingerspitzen!", "", constants.onboarding.color2, UIColor.white, UIColor.white, constants.onboarding.titleFont, constants.onboarding.descriptionFont),
+            ("", "", "", "", constants.onboarding.color3, UIColor.white, UIColor.white, constants.onboarding.titleFont, constants.onboarding.descriptionFont),
+            ("", "Viel Spass!", "", "", constants.onboarding.color4, UIColor.white, UIColor.white, constants.onboarding.titleFont, constants.onboarding.descriptionFont)][index]
     }
     
    @objc func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {}
@@ -66,7 +52,7 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
             if self.letsGoButton.alpha == 1 {
                 UIView.animate(withDuration: 0.2, animations: {
                     self.letsGoButton.alpha = 0
-                    self.checkedAnimationView.alpha = 0
+                    constants.animations.checkedAnimation.alpha = 0
                     
                 })
             }
@@ -74,8 +60,8 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
             if self.notificationButton.alpha == 1 {
                 UIView.animate(withDuration: 0.2, animations: { 
                     self.notificationButton.alpha = 0
-                    self.allowNotificationsView.stop()
-                    self.allowNotificationsView.alpha = 0
+                    constants.animations.notificationAnimation.stop()
+                    constants.animations.notificationAnimation.alpha = 0
                 })
             }
         }
@@ -88,29 +74,25 @@ class OnboardingViewController: UIViewController, PaperOnboardingDataSource, Pap
             UIView.animate(withDuration: 0.3, animations: {
                 self.notificationButton.alpha = 1
             })
-            
-            allowNotificationsView.alpha = 1
-            allowNotificationsView.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 400)
-            allowNotificationsView.contentMode = .scaleToFill
-            self.view.addSubview(allowNotificationsView)
-            allowNotificationsView.play(toProgress: 0.95, withCompletion: nil)
+            constants.animations.notificationAnimation.alpha = 1
+            constants.animations.notificationAnimation.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 400)
+            constants.animations.notificationAnimation.contentMode = .scaleToFill
+            self.view.addSubview(constants.animations.notificationAnimation)
+            constants.animations.notificationAnimation.play(toProgress: 0.95, withCompletion: nil)
             let btn: UIButton = UIButton(frame: CGRect(x: 223, y: 321.333, width: 50, height: 40))
             btn.addTarget(self, action: #selector(notificationSetup(_:)), for: .touchUpInside)
             self.view.addSubview(btn)
 
         } else if index == 3 {
             self.letsGoButton.alpha = 1
-            print("pls")
-            
             UIView.animate(withDuration: 0.3, animations: {
                 self.letsGoButton.alpha = 1.0
             })
-
-            checkedAnimationView.alpha = 1
-            checkedAnimationView.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
-            checkedAnimationView.contentMode = .scaleAspectFill
-            self.view.addSubview(checkedAnimationView)
-            checkedAnimationView.play()
+            constants.animations.checkedAnimation.alpha = 1
+            constants.animations.checkedAnimation.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
+            constants.animations.checkedAnimation.contentMode = .scaleAspectFill
+            self.view.addSubview(constants.animations.checkedAnimation)
+            constants.animations.checkedAnimation.play()
         }
     }
     

@@ -7,20 +7,21 @@
 //
 
 import UIKit
+import WebKit
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet weak var elementInfoLabel: UILabel!
-    @IBOutlet weak var lableText: UILabel!
+    @IBOutlet weak var webView: WKWebView!
     
-    var userText:String?
-    var elementInfo:String?
-
+    var elementLink:String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lableText.text = userText
-        elementInfoLabel.text = elementInfo
+        let url = URL(string: elementLink!)!
+        let request = URLRequest(url: url)
+        self.webView.load(request)
+        
     }
 }

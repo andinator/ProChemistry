@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import NotificationCenter
 
 class MolRechnerViewController: UIViewController {
 
@@ -21,12 +22,11 @@ class MolRechnerViewController: UIViewController {
     let molCalculatorBrain = MolCalculatorBrain()
     var managedObjectContext:NSManagedObjectContext!
     
-    override func viewDidLoad() { super.viewDidLoad() }
-    
-    override func didReceiveMemoryWarning() {super.didReceiveMemoryWarning()}
-    
-    //MARK: Actions
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViewResizerOnKeyboardShown()
+    }
+
     @IBAction func rechnePressed(_ sender: UIButton) {
         
         var ergebnis = 0.0

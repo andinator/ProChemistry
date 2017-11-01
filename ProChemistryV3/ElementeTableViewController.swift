@@ -10,8 +10,8 @@ import UIKit
 
 class ElementeTableViewController: UITableViewController, UIViewControllerPreviewingDelegate {
     
-    let data = ["Wasserstoff","Sauerstoff","Kohlenstoff","Stickstoff"]
-    let data2 = ["Mol : 1", "Mol: ka", "Mol: ka2", "Mol: 14glaubs"]
+    let data = constants.elemente.elementeNamenLang
+    let data2 = constants.elemente.elmenteWikipedia
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,12 +58,10 @@ class ElementeTableViewController: UITableViewController, UIViewControllerPrevie
     
     private func createDetailViewControllerIndexPath(indexPath: IndexPath) -> DetailViewController {
         
-        let text = data[indexPath.row]
-        let text2 = data2[indexPath.row]
+        let links = data2[indexPath.row]
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let detailViewController = sb.instantiateViewController(withIdentifier: "detailVC") as! DetailViewController
-        detailViewController.userText = text
-        detailViewController.elementInfo = text2
+        detailViewController.elementLink = links
         return detailViewController
     }
     
